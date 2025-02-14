@@ -6,6 +6,8 @@ import android.view.View
 import android.widget.Spinner
 import android.widget.TextView
 import beeradviser.BeerExpert
+import Raza.razadviser
+
 
 
 class FindBeerActivity : Activity() {
@@ -26,5 +28,19 @@ class FindBeerActivity : Activity() {
             recomendado += recomendaciones[i] + "\n"
         }
         brands.text = recomendado
+    }
+
+    fun onClickFindRaza(view: View?) {
+        val pets = findViewById<TextView>(R.id.pets)
+        val raza = findViewById<Spinner>(R.id.raza)
+        val razas = raza.selectedItem.toString()
+        val r: razadviser = razadviser()
+        val recomendaciones: ArrayList<String> = r.getRaza(razas)
+
+        var recomendado = ""
+        for (i in recomendaciones.indices) {
+            recomendado += recomendaciones[i] + "\n"
+        }
+        pets.text = recomendado
     }
 }

@@ -10,7 +10,6 @@
     android:background="#ffe6f0"
     tools:context=".FindBeerActivity">
 
-    <!-- Titulo de la aplicación -->
     <TextView
         android:id="@+id/app_title"
         android:layout_width="wrap_content"
@@ -56,4 +55,49 @@
         android:textColor="#cc0066"
         android:textSize="18sp" />
 
+
+    <TextView
+        android:id="@+id/app_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pets"
+        android:textSize="24sp"
+        android:textColor="#cc0066"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Spinner
+        android:id="@+id/raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:entries="@array/razas"
+        android:backgroundTint="#ff99cc"
+        android:popupBackground="@android:color/holo_purple" />
+
+    <Button
+        android:id="@+id/find_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/find_pets"
+        android:onClick="onClickFindRaza"
+        android:backgroundTint="#ff99cc"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/pets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/pets"
+        android:textColor="#cc0066"
+        android:textSize="18sp" />
 </LinearLayout>

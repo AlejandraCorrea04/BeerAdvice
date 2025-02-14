@@ -8,4 +8,12 @@
         <item>brown</item>
         <item>dark</item>
     </string-array>
+    <string name="find_pets">Encontrar razas!</string>
+    <string name="pets">No hay razas seleccionadas</string>
+    <string-array name="razas">
+        <item>pastor</item>
+        <item>pinscher</item>
+        <item>pomerania</item>
+        <item>bulldog</item>
+    </string-array>
 </resources>
